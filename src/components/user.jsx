@@ -38,7 +38,7 @@ const User = ({
 };
 
 User.propTypes = {
-  _id: PropTypes.number.isRequired,
+  _id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   qualities: PropTypes.array,
   profession: PropTypes.object.isRequired,
