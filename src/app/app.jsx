@@ -4,15 +4,15 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Users from "./layouts/users";
 import Login from "./layouts/login";
 import Main from "./layouts/main";
-import NavBar from "./components/navBar";
+import NavBar from "./components/ui/navBar";
 
 function App() {
   return (
     <div>
       <NavBar />
       <Routes>
-        <Route path="/users/:userId?" element={<Users />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/users/:userId?/:edit?" element={<Users />} />
+        <Route path="/login/:type?" element={<Login />} />
         <Route path="/" element={<Main />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
