@@ -4,7 +4,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Users from "./layouts/users";
 import Login from "./layouts/login";
 import Main from "./layouts/main";
-import NavBar from "./components/ui/navBar";
+import NavBar from "./components/navBar";
 
 function App() {
   return (
